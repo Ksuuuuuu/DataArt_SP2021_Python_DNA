@@ -18,7 +18,7 @@ for i in first_key:
         size=len(i)
         buffer=str[first_pos+size:first_pos+2*size-1]
         while i==buffer:
-            count++
+            count+=1
             buffer=str[first_pos+size*count:first_pos+size*count+size-1]
     lst_count.append(count) 
 res=D.get(lst_count)
