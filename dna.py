@@ -1,6 +1,7 @@
-def main():
-    pass
-
-
-if __name__ == "__main__":
-    main()
+import csv
+reader=csv.reader(open('databases/small.csv'))
+result={}
+for row in reader:
+    key=row[1:]
+    result[key]=row[0]
+print result
